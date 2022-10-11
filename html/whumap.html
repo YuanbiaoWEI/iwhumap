@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>whumap</title>
+    <!-- ol样式 -->
+    <link href="../css/ol.css" rel="stylesheet" type="text/css" />
+    <!-- 引入第三方插件库 -->
+    <script src="../libs/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <link href="../css/icon.css" rel="stylesheet" type="text/css" />
+     <!-- 引入第三方Easyui插件库 -->
+     <link href="../libs/jqueryEasyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+     <link href="../libs/jqueryEasyui/themes/icon.css" rel="stylesheet" type="text/css" />
+     <link href="../libs/jqueryEasyui/themes/color.css" rel="stylesheet" type="text/css" />
+     <script src="../libs/jqueryEasyui/jquery.easyui.min.js" type="text/javascript"></script>
+     <script src="../libs/ol3.js" type="text/javascript"></script>
+     <link type="text/css" rel="stylesheet" href="../css/whumap.css" />
+</head>
+<body>
+    <!--地图-->
+    <div id="mapCon" class="mapCon"></div>
+    <!--图层列表-->
+    <div id="layerlist" class="easyui-window" data-options="title:'图层列表',closed:false,maximizable:false,minimizable:false,closable:true,resizable:false,shadow:false,collapsible:false"
+         style="width: 170px; height: 170px; left: 1290px; top: 20px;">
+         <!--参考值：width: 310px; padding: 5px; left: 60px; top: 20px;-->
+            <ul id="layerTree" class="layerTree"></ul>
+    </div>
+    <!--坐标值-->
+    <div id="location" class="easyui-window" data-options="title:'经纬度坐标',closed:false,maximizable:false,minimizable:false,closable:true,resizable:false,shadow:false,collapsible:false"
+    style="width: 170px; height: 70px; left: 1290px; top: 200px;">
+        <div class="custom-mouse-position"></div>
+    </div>
+    <!--比例尺-->
+    <div id="scale_windows" class="easyui-window" data-options="title:'比例尺',closed:false,maximizable:false,minimizable:false,closable:true,resizable:false,shadow:false,collapsible:false"
+    style="width: 170px; height: 70px; left: 1290px; top: 280px;">
+    <div id="scale" class="custom-mouse-position2"></div>
+    <!--属性栏-->
+    <div id="attribute_windows" class="easyui-window" data-options="title:'属性栏',closed:false,maximizable:false,minimizable:false,closable:true,resizable:false,shadow:false,collapsible:false"
+    style="width: 170px; height: 150px; left: 1290px; top: 360px;">
+    <div id="attribute" class="custom-mouse-position2"></div>
+  </div>
+
+    <script type="text/javascript" src="../js/whumap.js"></script>
+</body>
+</html>

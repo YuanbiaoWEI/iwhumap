@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>武汉大学地理空间信息查询系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!-- 强制360浏览器用WebKit内核 -->
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <!-- 系统首页样式 -->
+    <link type="text/css" rel="stylesheet" href="css/base.css" />
+    <!-- 开源库jQuery -->
+    <script src="libs/jquery-1.11.2.min.js"></script>
+    <!-- 系统首页功能库 -->
+    <script type="text/javascript" src="js/init.js"></script>
+    <link rel="icon" href="img/logo/title.ico">
+</head>
+<body>
+    <div id="header">
+        <a class="logo" href="index.html">
+            <img src="img/logo/logo.png" />            
+            <span> 武汉大学地理空间信息查询系统 </sapn>
+        </a>
+    </div>
+    <div id="content">
+        <div class="leftsidebar_box">
+            <div class="line"></div>
+            <dl class="control">
+                <dt class="first_dt">地图查询</dt>
+                <dd onclick="setCore('NameQuery')">查找位置</dd>
+                <dd onclick="setCore('GroupQuery')">按类查询</dd>
+                <dd onclick="setCore('AreaQuery')">面积查询</dd>
+                <dd onclick="setCore('SQLQuery')">SQL几何查询（支持空间SQL）</dd>
+            </dl>
+            <dl class="GraphicOperation">
+                <dt>用户足迹查询</dt>
+                <dd onclick="setCore('Register')">用户注册</dd>
+                <dd onclick="setCore('Login')">查看足迹</dd>
+                <dd onclick="setCore('Edit')">添加足迹</dd>
+                <dd onclick="setCore('Delete')">删除足迹</dd>
+            </dl>
+            <dl class="GraphicOperation">
+                <dt>帮助</dt>
+                <dd><a href="GROUP13.html">返回欢迎界面</a></dd>
+                <dd><a href="http://postgis.net/docs/" target="_blank">SQL帮助文档</a></dd>
+                <dd><a href="contact.html">联系开发者团队</a></dd>
+            </dl>
+            <dl class="GraphicOperation">
+                <dt>三维武大</dt>
+                <dd onclick="setCore('cesiumtest')">走进武大</dd>
+            </dl>
+        </div>
+        <div class="iframe_wrapper">
+            <iframe id="container_iframe" name="container_iframe" scrolling="no"></iframe>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
